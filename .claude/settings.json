@@ -2,7 +2,23 @@
   "permissions": {
     "allow": [
       "Bash(./scripts/test.sh)",
-      "Bash(./scripts/test.sh *)"
+      "Bash(./scripts/test.sh *)",
+      "Bash(python -c ' *)",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('lightrag/prompt_zh.py', encoding='utf-8'\\).read\\(\\)\\); print\\('prompt_zh.py: syntax OK'\\)\")",
+      "Bash(python -c \"import py_compile; py_compile.compile\\('lightrag/prompt_zh.py', doraise=True\\); print\\('compile OK'\\)\")",
+      "Bash(ls -1 api/routers)",
+      "Bash(ls -1 api/)",
+      "Bash(ls -1 parser/)",
+      "Bash(ls -1 parser/external)",
+      "Bash(ls -1 kg/)",
+      "Bash(ls -1 parser/docx/)",
+      "Bash(ls -1 parser/external/mineru/)",
+      "Bash(ls -1 parser/external/docling/)",
+      "Bash(ls -1 parser/legacy/)",
+      "Bash(ls -1 parser/markdown/)",
+      "Bash(ls -1 parser/docx/omml/)",
+      "Bash(head -5 api/__init__.py)",
+      "Bash(head -3 tools/__init__.py)"
     ]
   },
   "hooks": {
